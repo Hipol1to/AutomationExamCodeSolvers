@@ -98,7 +98,7 @@ namespace AutomationExamCodeSolvers.Features
         [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Verify the app shows the correct status for all warehouse receipts records")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Warehouse Receipts")]
         [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("CodeSolversExam")]
-        [Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute("38092", "testuser1", "pass123", "", null)]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DataRowAttribute("38092", "namnun", "M@g@y@33166", "On Hand", null)]
         public async System.Threading.Tasks.Task VerifyTheAppShowsTheCorrectStatusForAllWarehouseReceiptsRecords(string networkId, string username, string password, string filterStatus, string[] exampleTags)
         {
             string[] @__tags = new string[] {

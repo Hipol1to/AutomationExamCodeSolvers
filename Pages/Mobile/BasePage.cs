@@ -1,7 +1,9 @@
 ﻿using AutomationExamCodeSolvers.Helpers;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Appium;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
+using AutomationExamCodeSolvers.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,10 +27,10 @@ namespace AutomationExamCodeSolvers.Pages.Mobile
             Wait.Until(d => d.FindElement(locator).Displayed);
             Driver.FindElement(locator).Click();
         }
-        protected void Type(By locator)
+        protected void Type(By locator, string textToWrite)
         {
             Wait.Until(d => d.FindElement(locator).Displayed);
-            Driver.FindElement(locator).Click();
+            Driver.FindElement(locator).SendKeys(textToWrite);
         }
         protected bool IsVisible(By locator)
         {

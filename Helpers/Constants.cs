@@ -15,6 +15,7 @@ namespace AutomationExamCodeSolvers.Helpers
         public const string AutomationName = "automationName";
         public const string AppPackage = "appPackage";
         public const string AppActivity = "appActivity";
+        public const string AutoGrantPermissions = "autoGrantPermissions";
         public const string Android= "Android";
         public const string Ios = "iOS";
 

@@ -24,7 +24,7 @@ namespace AutomationExamCodeSolvers.Helpers
         }
         public static int GetImplicitTimeout()
         {
-            int timeout = int.Parse(GetConfig()[Constants.DefaultImplicitWait]!.ToString());
+            int timeout = Constants.DefaultImplicitWait;
             return timeout;
         }
     }
