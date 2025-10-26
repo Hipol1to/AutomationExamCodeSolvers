@@ -10,7 +10,7 @@ namespace AutomationExamCodeSolvers.Pages.Mobile
 {
     public class WarehouseRececiptsScreen : BasePage
     {
-        private readonly By WarehouseReceiptRecord = By.XPath("//android.view.View[(*[contains(@text,'WH')])]/android.view.View[(*[contains(@text,'WH')])]");
+        private readonly By WarehouseReceiptRecord = By.XPath("//android.view.View[@text and not(.//android.view.View[@text]) and contains(@text,'WH')]");
         private readonly By FilterButton = By.XPath("//*[@class='android.widget.Button' and(not(contains(@content-desc,'menu')))and(not(contains(@content-desc,'back')))]");
         private readonly By BackButton = By.XPath("//android.widget.Button[@content-desc=\"back\"]");
         public WarehouseRececiptsScreen(AppiumDriver driver) : base(driver) { }
